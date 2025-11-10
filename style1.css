@@ -1,0 +1,101 @@
+#h1{color:00BFFF;
+ text-align:center;
+ font-family:Arial;
+ font-style:italic;
+ }
+ #p1{color:red;
+ font-family:monospace;
+ text-align:left;
+ font-size:25px;
+ }
+ #h2{
+ color:FFD700;
+ text-align:center;
+ font-family:'Times New Roman', Times, serif;
+ font-style:italic;
+ }
+ #ol1
+ {
+ background-color: #E6E6FA;
+ color:#20B2AA;
+ font-family:Impact;
+ font-style:italic;
+ font-size:20px;
+ }
+ li:hover{
+ background-color: #7FFFD4;
+ color:#FFD700;
+ font-family:Impact;
+ font-style:italic;
+ font-size:20px;
+ border:2px solid #FFD700;	
+ }
+ li:hover{
+ background-color: #7FFFD4;
+ color:#FFD700;
+ font-family:Impact;
+ font-style:italic;
+ font-size:20px;
+ border:2px solid #FFD700;
+ }
+ li:hover{
+ background-color: #7FFFD4;
+ color:#FFD700;
+ font-family:Impact;
+ font-style:italic;
+ font-size:20px;
+ border:2px solid #FFD700;
+ }
+ li:hover{
+ background-color: #7FFFD4;
+ color:#FFD700;
+ font-family:Impact;
+ font-style:italic;
+ font-size:20px;
+ border:2px solid #FFD700;
+ }
+ li:hover{
+ background-color: #7FFFD4;
+ color:#FFD700;
+ font-family:Impact;
+ font-style:italic;
+ font-size:20px;
+ border:2px solid #FFD700;
+ }
+ li:hover{
+ background-color: #7FFFD4;
+ color:#FFD700;
+ font-family:Impact;
+ font-style:italic;
+ font-size:20px;
+ border:2px solid #FFD700;
+ }
+ 
+ #p2{
+ text-align:center;
+ color:blue;
+ }
+ table {
+  border-collapse: collapse;
+  width: 40%;
+  margin: auto;
+}
+th, td {
+  border: 1px solid #20B2AA;
+  padding: 10px;
+  text-align: center;
+}
+th {
+  background-color: purple;
+  color: white;
+}
+tr:nth-child(odd) {
+  background-color: #E5AA70;
+}
+
+tr:nth-child(even) {
+  background-color: #E1C16E	;
+}
+tr:hover {
+  background-color: #FFB8B8;
+}
