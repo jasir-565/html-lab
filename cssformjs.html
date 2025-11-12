@@ -3,60 +3,48 @@
 <title>Registration Form</title>
 <style>
 body {
-  background-color: #FFA500;
-  font-family: Arial;
-}
-
-h1 {
-  color: navy;
-  text-align: center;
+	background: #ede7f6;
 }
 form {
-  background-color: #D7CDE8;
-  padding: 20px;
-  border: 5px solid navy;
-  width: 400px;
-  margin: 20px auto;
+	background: #ffffff;
+	padding: 20px; 
+	width: 300px; 
+	margin: 50px auto; 
+	border-radius: 5px;
 }
-
-legend{
-  color: navy;
-  font-weight: bold;
-  font-size: 18px;
-  font-family: Arial;
+label {
+	display: block; 
+	margin-top: 10px; 
+	font-weight: bold; 
+	color: #6a1b9a;
 }
-
-
-label{
-  font-weight: bold;
-  color: navy;
-  display: inline-block;
-  width: 100px;
-  }
-input[type="radio"]{
-  cursor: pointer;
-  accent-color: navy;
-  margin-right: 5px;
+input, button {
+	width: 100%; 
+	padding: 8px; 
+	margin-top: 5px; 
+	box-sizing: border-box;
 }
-
-
-input, textarea, select,button {
-  margin: 5px;
-  color: navy;
-  font-family: monospace;
-  }
-input[type="submit"]:hover {
-  background-color: #7FFFD4; 
+button {
+	background: #8e24aa;
+	color: white; 
+	border: none; 
+	margin-top: 15px;
+	cursor: pointer;
 }
-button[type="button"]:hover {
-  background-color: #7FFFD4; 
+button:hover {
+	background: #6a1b9a;
 }
-
-
 </style>
+
+ 
 </head>
 <body>
 <script>
+function cancel()
+{
+	alert("you clicked cancel");
+	
+}
 function validate()
 {
     var passwd=document.getElementById("pwd").value;
@@ -75,6 +63,21 @@ function validate()
         alert("name should not be a number");
         return false;
     }
+	else if(phne=="")
+	{
+		alert("you need to enter phone number");
+		return false;
+	}
+	else if(phne.length < 10 || phne.length > 10)
+	{
+		alert("phone number must be 10 numbers")
+		return false;
+	}
+	else if(isNaN(phne))
+	{
+		alert("phone number must not be characters");
+		return false;
+	}
     else if(passwd=="")
     {
         alert("enter a password");
@@ -87,26 +90,12 @@ function validate()
     }
 	else if(passwd1 != passwd)
 	{
-	alert("confirm your password again")
-	return false;
+		alert("re enter the correct  password")
+		return false;
 	}
 	
 	
-	else if(phne=="")
-	{
-	alert("you need to enter phone number");
-	return false;
-	}
-	else if(phne.lenght < 10 || phne.length > 10)
-	{
-	alert("phone number must be 10 numbers")
-	return false;
-	}
-	else if(isNaN(phne))
-	{
-	alert("phone number must not be characters");
-	return false;
-	}
+	
     else
     {
         alert("thank you for registration");
@@ -127,15 +116,15 @@ function validate()
 
 
 <label>Password:</label>
-<input type="password" id="pwd" placeholder="Enter password" required><br><br>
+<input type="password" id="pwd" maxlength="8" placeholder="Enter password" required><br><br>
 
 
 <label>Re-Enter Password:</label>
-<input type="password" id="pwd1" placeholder="Re-Enter password" required><br><br>
+<input type="password" id="pwd1" maxlength="8" placeholder="Re-Enter password" required><br><br>
 
 
-<button type="button" onClick="validate()">Submit</button>
-<button type="button">Cancel</button>
+<button type="submit" onClick="validate()">Submit</button>
+<button type="button" onClick="cancel()">Cancel</button>
 
 </form>
 </body>
