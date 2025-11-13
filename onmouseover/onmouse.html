@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Changing image and text</title>
+<style>
+img {
+  width: 1000px;
+  border: 2px solid green;
+  border-radius: 50%;
+  padding: 5px;
+  height: 800px;
+}
+#p1 {
+  font-size: 50px;
+  align: right;
+}
+</style>
+<script>
+function one() {
+  document.getElementById("img").src="au.jpg";
+  document.getElementById("p1").innerHTML= "AUDI";
+  document.getElementById("p1").style.color="blue";
+}
+ 
+function two() {
+  document.getElementById("img").src="je.jpg";
+  document.getElementById("p1").innerHTML= "JEEP";
+  document.getElementById("p1").style.color="red";
+}
+</script>
+</head>
+<body>
+<img src="car.jpg"id="img"onmouseover="one()"onmouseout="two()">
+<p id="p1"><b></b></p>
+</body>
+</html>
