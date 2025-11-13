@@ -1,67 +1,124 @@
+<!DOCTYPE html>
 <html>
-<head> <title> forms </title>
+<head>
+<title>Registration Form</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff; /* light blue background */
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  background-color: #ffffff; /* white form box */
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #87ceeb; /* sky blue border */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #b0e0e6;
+}
+
+h1 {
+  color: #004080;
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+  font-weight: bold;
+  color: #333;
+}
+
+input, textarea, select {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 60px;
+}
+
+fieldset {
+  border: 1px solid #87ceeb;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+legend {
+  font-weight: bold;
+  color: #004080;
+}
+
+button {
+  background-color: #4682b4;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5dade2;
+}
+</style>
 </head>
+
 <body>
-<center><h1><b>REGISTRATION FORM</h1></b></center>
-   <br>
-   <br>
-   <br>
-	<form>
-	
-		<label> Name:  </label>
-		<input type="text" placeholder="Enter your name"> <br>  <br>
-		
-		<label> Mobile:  </label>
-		<input type="text" maxlength="10"  placeholder="Phone no">  <br>  <br>
-		
-		<label>Address: </label>
-		<textarea placeholder="Type your address"></textarea><br><br>
 
-		
-		<label> DOB: </label>
-		 <input type="date" placeholder="DOB"> <br> <br>
-		
-		
-		
-		
-		<label> Email:  </label>
-		<input type="text"  placeholder="Email"> <br>  <br>
-		<label> Password: </label>
-		<input type="password" maxlength="8" placeholder="Enter password">  <br>  <br>
-		
-		<label>Nationality: </label>
-		<select>
-			<option>Indian</option>
-			<option>Brazilian</option>
-			<option>Argentinaian</option>
-			<option>Indonesian</option>
-		</select>
-			
-		<br>  <br>
-		
-		<label> Gender: </label> <br><br>
-		<input type="radio" name="gender">
-		<label> Male </label>
-		<input type="radio"  name="gender">
-		<label> Female </label> <br>
-		<br>
-		<fieldset>
-		<legend> Language known: </legend> <br><br>
-		<input type="checkbox" > Malayalam<br>
-		<input type="checkbox" > English<br>
-		<input type="checkbox" > Arabic<br>
-		<input type="checkbox" > Hindi<br>
-		</fieldset>
-		<br> <br>
-		
-		
-		
-		<br><input type="submit"> &nbsp  &nbsp
-		<button type="button">Cancel</button>
-		
-	</form>
-	
+<h1><b>REGISTRATION FORM</b></h1>
+<form>
 
+<label>Name:</label>
+<input type="text" placeholder="Enter your name" required><br><br>
 
+<label>Mobile:</label>
+<input type="text" maxlength="10" placeholder="Phone no" required><br><br>
+
+<label>Address:</label>
+<textarea placeholder="Type your address" required></textarea><br><br>
+
+<label>DOB:</label>
+<input type="date" required><br><br>
+
+<label>Email:</label>
+<input type="email" placeholder="Email" required><br><br>
+
+<label>Password:</label>
+<input type="password" placeholder="Enter password" required><br><br>
+
+<label>Nationality:</label>
+<select required>
+<option value=""></option>
+<option>Indian</option>
+<option>Brazilian</option>
+<option>Argentinian</option>
+<option>Indonesian</option>
+</select><br><br>
+
+<label>Gender:</label><br>
+<input type="radio" name="gender" required> Male
+<input type="radio" name="gender"> Female<br><br>
+
+<fieldset>
+<legend>Language Known:</legend>
+<input type="checkbox"> Malayalam<br>
+<input type="checkbox"> English<br>
+<input type="checkbox"> Arabic<br>
+<input type="checkbox"> Hindi<br>
+</fieldset><br>
+
+<center>
+<button type="submit">Submit</button>
+<button type="button">Cancel</button>
+</center>
+
+</form>
 </body>
 </html>
