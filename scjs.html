@@ -1,30 +1,50 @@
 <html>
+<head>
+<style>
+body{font-family:Arial;background:#f5f5f5;padding:20px;}
+h2{text-align:center;font-weight:bold;}
+h2:nth-of-type(1){color:#005bb5;}
+h2:nth-of-type(2){color:#00833e;}
+.box{
+    padding:15px;width:60%;margin:15px auto;
+    border-radius:8px;box-shadow:0 0 8px #ccc;
+    color:white;font-weight:bold;line-height:28px;
+}
+.box:nth-of-type(1){background:#4da6ff;}
+.box:nth-of-type(2){background:#66cc8a;}
+</style>
+</head>
+
 <body>
-<center><h2>JavaScript String Functions</h2></center>
+
+<h2>JavaScript String Functions</h2>
+<div class="box">
 <script>
-	document.writeln("<h4>")
-	let s1 = "Welcome to the world of JavaScript"
-	document.writeln( s1, "<br>")
-	document.writeln("indexOf('o') : ", s1.indexOf("o"), "<br>")
-	document.writeln("slice(0,7) : ", s1.slice(0,7), "<br>") 
-	document.writeln("search('o') : ", s1.search("o"), "<br>")
-	document.writeln("substring(2,10) : ", s1.substring(2,10), "<br>")
-	document.writeln("substr(2,10) : ", s1.substr(2,10), "<br>")
-	document.writeln("replace(JavaScript, JS) : ", s1.replace("JavaScript","JS"), "<br>")
-	document.writeln("charAt(3) : ", s1.charAt(3), "<br><br>")
-	var s2=s1.toUpperCase()
-	document.writeln("Uppercase is:",s2)
+let s1="Welcome to the world of JavaScript"
+document.writeln(s1+"<br>")
+document.writeln("indexOf('o'): "+s1.indexOf("o")+"<br>")
+document.writeln("slice(0,7): "+s1.slice(0,7)+"<br>")
+document.writeln("search('o'): "+s1.search("o")+"<br>")
+document.writeln("substring(2,10): "+s1.substring(2,10)+"<br>")
+document.writeln("substr(2,10): "+s1.substr(2,10)+"<br>")
+document.writeln("replace(JavaScript, JS): "+s1.replace("JavaScript","JS")+"<br>")
+document.writeln("charAt(3): "+s1.charAt(3)+"<br>")
+document.writeln("Uppercase: "+s1.toUpperCase()+"<br>")
 </script>
-<center>
-<h2>Math Functions</h2></center>
+</div>
+
+<h2>Math Functions</h2>
+<div class="box">
 <script>
-	document.writeln("Value of PI: ", Math.PI ,"<br>")
-	document.writeln("Square root of 144 is: ", Math.sqrt(144) ,"<br>")
-	document.writeln("the 2 power of 5 is: ", Math.pow(2,5) ,"<br>")
-	document.writeln("maximum among 80,98,10,14,1 is: ", Math.max(80,98,10,14,1) ,"<br>")
-	document.writeln("minimum among 80,98,10,14,1 is: ", Math.min(80,98,10,14,1) ,"<br>")
-	document.writeln("Absolute value of -6 is: ", Math.abs(-6) ,"<br>")
-	document.writeln("round figure of 3.14 is: ", Math.round(3.14) ,"<br>")
+document.writeln("Value of PI: "+Math.PI+"<br>")
+document.writeln("Square root of 144: "+Math.sqrt(144)+"<br>")
+document.writeln("2 power 5: "+Math.pow(2,5)+"<br>")
+document.writeln("Maximum: "+Math.max(80,98,10,14,1)+"<br>")
+document.writeln("Minimum: "+Math.min(80,98,10,14,1)+"<br>")
+document.writeln("Absolute value of -6: "+Math.abs(-6)+"<br>")
+document.writeln("Round of 3.14: "+Math.round(3.14)+"<br>")
 </script>
+</div>
+
 </body>
 </html>
